@@ -42,7 +42,6 @@
 		274B7C512984332100DCFF44 = {
 			isa = PBXGroup;
 			children = (
-				274B7C712984389100DCFF44 /* CalendarCell.swift */,
 				274B7C5C2984332100DCFF44 /* Calendar */,
 				274B7C5B2984332100DCFF44 /* Products */,
 			);
@@ -63,6 +62,7 @@
 				274B7C5F2984332100DCFF44 /* SceneDelegate.swift */,
 				274B7C612984332100DCFF44 /* ViewController.swift */,
 				274B7C632984332100DCFF44 /* Main.storyboard */,
+				274B7C712984389100DCFF44 /* CalendarCell.swift */,
 				274B7C662984332100DCFF44 /* Assets.xcassets */,
 				274B7C682984332100DCFF44 /* LaunchScreen.storyboard */,
 				274B7C6B2984332100DCFF44 /* Info.plist */,
