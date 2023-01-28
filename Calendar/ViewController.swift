@@ -22,8 +22,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
 
     func setCellsView() {
-        let width = (collectionView.frame.size.width - 2) / 8
-        let height = (collectionView.frame.size.height - 2) / 8
+        let width = (collectionView.frame.size.width - 5) / 7.5 //originally -2
+        let height = (collectionView.frame.size.height - 5) / 7.5 // and / 8
     
         let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         flowLayout.itemSize = CGSize(width: width, height: height)
