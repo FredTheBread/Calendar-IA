@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2732EEFE29885FAA00F8C6B2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2732EEFD29885FAA00F8C6B2 /* TabBarController.swift */; };
+		273EA2F2298867E900A5EA13 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273EA2F1298867E900A5EA13 /* HomeController.swift */; };
 		274B7C5E2984332100DCFF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B7C5D2984332100DCFF44 /* AppDelegate.swift */; };
 		274B7C602984332100DCFF44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B7C5F2984332100DCFF44 /* SceneDelegate.swift */; };
 		274B7C622984332100DCFF44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B7C612984332100DCFF44 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2732EEFD29885FAA00F8C6B2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		273EA2F1298867E900A5EA13 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		274B7C5A2984332100DCFF44 /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		274B7C5D2984332100DCFF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		274B7C5F2984332100DCFF44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,10 +72,12 @@
 		274B7C5C2984332100DCFF44 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				273EA2F1298867E900A5EA13 /* HomeController.swift */,
 				274B7C5D2984332100DCFF44 /* AppDelegate.swift */,
 				274B7C5F2984332100DCFF44 /* SceneDelegate.swift */,
 				274B7C612984332100DCFF44 /* ViewController.swift */,
 				274B7C632984332100DCFF44 /* Main.storyboard */,
+				2732EEFD29885FAA00F8C6B2 /* TabBarController.swift */,
 				27A02FA52985590D00DEC744 /* Event.swift */,
 				27FEEB432985B8BB008F860E /* EventCell.swift */,
 				276F704829855600001DD0CC /* EventEditViewController.swift */,
@@ -158,7 +164,9 @@
 			files = (
 				27E8BA4429844245005340E6 /* CalendarHelper.swift in Sources */,
 				27FEEB442985B8BB008F860E /* EventCell.swift in Sources */,
+				273EA2F2298867E900A5EA13 /* HomeController.swift in Sources */,
 				27A02FA62985590D00DEC744 /* Event.swift in Sources */,
+				2732EEFE29885FAA00F8C6B2 /* TabBarController.swift in Sources */,
 				276F704929855600001DD0CC /* EventEditViewController.swift in Sources */,
 				274B7C622984332100DCFF44 /* ViewController.swift in Sources */,
 				274B7C5E2984332100DCFF44 /* AppDelegate.swift in Sources */,
