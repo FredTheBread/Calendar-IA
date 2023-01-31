@@ -4,13 +4,13 @@ class EventEditViewController: UIViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var nameTextField: UITextField!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+            
         datePicker.date = selectedDate
     }
-    
+        
     @IBAction func saveAction(_ sender: Any) {
         let newEvent = Event()
         newEvent.id = EventsList.count
@@ -19,6 +19,5 @@ class EventEditViewController: UIViewController {
         
         EventsList.append(newEvent)
         navigationController?.popViewController(animated: true)
-        
     }
 }

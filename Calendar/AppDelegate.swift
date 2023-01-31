@@ -24,6 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
+    
+    func application(_ application: UIApplication, 
+                shouldSaveSecureApplicationState coder: NSCoder) -> Bool {
+       // Save the current app version to the archive.
+       coder.encode(11.0, forKey: "1.0")
+            
+       // Always save state information.
+       return true
+    }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.

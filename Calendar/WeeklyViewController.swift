@@ -7,15 +7,18 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var editButton: UIBarButtonItem!
+    //@IBOutlet weak var deleteButton: UIBarButtonItem!
     var totalSquares = [Date]()
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         setCellsView()
         setWeekView()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
 
     func setCellsView() {
@@ -77,8 +80,56 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         setWeekView()
     }
     
+    @IBAction func editButtonTapped(sender: UIButton)
+    {
+        tableView.setEditing(!tableView.isEditing, animated: true)
+        
+        sender.setTitle(tableView.isEditing ? "Done" : "Edit", for: [])
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        if indexPath.row % 3 == 0 {
+            return .delete
+        }
+        else if indexPath.row % 3 == 1 {
+            return .insert
+        }
+
+        else {
+            return .none
+        }
+   }
+    
+//    private func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//            if editingStyle == .delete {
+//                // Delete the row from the data source
+//                print("delete button clicked at \(indexPath.section)\\\(indexPath.row)")
+//                tableView.deleteRows(at: [indexPath], with: .none)
+//            } else if editingStyle == .insert {
+//                // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//                print("insert button clicked at \(indexPath.section)\\\(indexPath.row)")
+//            }
+//    }
+    
+    internal func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        print("commitEditingStyle called at \(indexPath)")
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            //tableView.deleteRows(at: [indexPath], with: .none)
+            print("delete button clicked at \(indexPath.section)\\\(indexPath.row)")
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+            print("insert button clicked at \(indexPath.section)\\\(indexPath.row)")
+        }
+        
+    }
+    
     override open var shouldAutorotate: Bool {
         return false
+    }
+    
+    var allowsMultipleSelection: Bool { 
+        return true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -94,6 +145,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         tableView.reloadData()
     }
 }

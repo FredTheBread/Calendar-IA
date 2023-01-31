@@ -1,13 +1,13 @@
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate {
+    
+    
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var totalSquares = [String]()
-    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         setCellsView()
         setMonthView()
