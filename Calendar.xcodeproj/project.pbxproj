@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2705E5F2298A84A20073479F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705E5F1298A84A20073479F /* MapView.swift */; };
 		2705E5F4298A85970073479F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705E5F3298A85970073479F /* MapViewModel.swift */; };
+		270ADB6E298CE3B40031018E /* CalendarDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270ADB6D298CE3B40031018E /* CalendarDay.swift */; };
 		270D28AC298CDDCD0030A102 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D28AB298CDDCD0030A102 /* HomeViewController.swift */; };
 		2732EEFE29885FAA00F8C6B2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2732EEFD29885FAA00F8C6B2 /* TabBarController.swift */; };
 		274B7C5E2984332100DCFF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B7C5D2984332100DCFF44 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 		0C0736C59AAC474FB0D65F14 /* Pods-Calendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calendar.debug.xcconfig"; path = "Target Support Files/Pods-Calendar/Pods-Calendar.debug.xcconfig"; sourceTree = "<group>"; };
 		2705E5F1298A84A20073479F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2705E5F3298A85970073479F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		270ADB6D298CE3B40031018E /* CalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDay.swift; sourceTree = "<group>"; };
 		270D28AB298CDDCD0030A102 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		27150F0C3DF8377BE4B49AE6 /* Pods_Calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2732EEFD29885FAA00F8C6B2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				2791786429854083002E2034 /* WeeklyViewController.swift */,
 				27F652C5298C85F20046A1CB /* DailyCell.swift */,
 				27F652C7298C86060046A1CB /* DailyViewController.swift */,
+				270ADB6D298CE3B40031018E /* CalendarDay.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				2732EEFE29885FAA00F8C6B2 /* TabBarController.swift in Sources */,
 				27F652CA298C863D0046A1CB /* SettingsViewController.swift in Sources */,
 				276F704929855600001DD0CC /* AddEvent.swift in Sources */,
+				270ADB6E298CE3B40031018E /* CalendarDay.swift in Sources */,
 				2705E5F4298A85970073479F /* MapViewModel.swift in Sources */,
 				2705E5F2298A84A20073479F /* MapView.swift in Sources */,
 				274B7C622984332100DCFF44 /* ViewController.swift in Sources */,
