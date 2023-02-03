@@ -17,8 +17,11 @@ class EventEditViewController: UIViewController {
         newEvent.name = nameTextField.text
         newEvent.date = datePicker.date
         
-        EventsList.append(newEvent)
-        navigationController?.popViewController(animated: true)
+        if(!nameTextField.text!.isEmpty) {
+            EventsList.append(newEvent)
+            navigationController?.popViewController(animated: true)
+        }
+        
     }
     
     class event {

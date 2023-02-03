@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 class CalendarCell: UICollectionViewCell {
-    @IBOutlet weak var dayOfMonth: UILabel!
+    @IBOutlet weak var dayOfMonth: UILabel! //Label showing the day of the month
 }
