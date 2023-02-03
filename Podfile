@@ -7,5 +7,5 @@ target 'Calendar' do
 
   # Pods for Calendar
 pod 'FloatingPanel'
-
+pod 'SPPermissions/Location'
 end

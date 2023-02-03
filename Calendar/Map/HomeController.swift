@@ -67,7 +67,5 @@ class HomeController: UIViewController, SearchViewControllerDelegate {
             )
         ), 
         animated: true)
-        
-        
     }
 }

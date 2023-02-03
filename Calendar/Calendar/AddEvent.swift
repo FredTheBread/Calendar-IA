@@ -20,4 +20,20 @@ class EventEditViewController: UIViewController {
         EventsList.append(newEvent)
         navigationController?.popViewController(animated: true)
     }
+    
+    class event {
+        var title: String!
+        var location: Location!
+        var shots: Int!
+        var allDay: Bool!
+        var date: Date!
+        
+        init(title: String!, location: Location!, shots: Int!, allDay: Bool!, date: Date!) {
+            self.title = title
+            self.location = location
+            self.shots = shots
+            self.allDay = allDay
+            self.date = date
+        }
+    }
 }
